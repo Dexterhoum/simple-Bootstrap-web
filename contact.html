@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>联系我</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+    body {
+   height: 100%;
+   margin: 0;
+   padding: 0;
+   background: url('./image/contact01.jpg') no-repeat center center fixed;
+   background-size: cover;
+   color: #fff;
+}
+.navbar {
+    background: rgba(0, 0, 0, 0.5); /* 半透明背景 */
+    background-size: cover;
+    color: #fff;
+}
+
+.navbar .navbar-brand, .navbar-nav .nav-link {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.navbar .navbar-brand:hover, .navbar-nav .nav-link:hover {
+    color: #f8f9fa;
+}
+
+.footer {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    color: #000;
+}
+
+
+</style>
+<body>
+    <!-- 导航栏 -->
+    <nav id="navbar-example" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">我的主页</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">关于我</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="contact.html">联系我</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 联系我内容 -->
+    <div class="container mt-5">
+        <h2>联系我</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">姓名</label>
+                <input type="text" class="form-control" id="name" placeholder="请输入您的姓名">
+            </div>
+            <div class="form-group">
+                <label for="email">电子邮件</label>
+                <input type="email" class="form-control" id="email" placeholder="请输入您的电子邮件">
+            </div>
+            <div class="form-group">
+                <label for="message">信息</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="请输入您的信息"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">提交</button>
+        </form>
+    </div>
+
+
+    <!-- 本地引用jQuery -->
+    <script src="./js/jquery.min.js"></script>
+    <!-- 本地引用Popper.js -->
+    <script src="./js/popper.min.js"></script>
+    <!-- 本地引用Bootstrap JS -->
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>

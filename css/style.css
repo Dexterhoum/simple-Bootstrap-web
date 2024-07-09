@@ -1,0 +1,88 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: url('../image/mybackground.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.5); /* 半透明背景 */
+    background-size: cover;
+    color: #fff;
+}
+
+.navbar .navbar-brand, .navbar-nav .nav-link {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.navbar .navbar-brand:hover, .navbar-nav .nav-link:hover {
+    color: #f8f9fa;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.container {
+    margin-top: 20px;
+    margin-bottom: 50px; /* 调整页脚下移 */
+}
+
+.footer-links .link-box {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.5); /* 半透明背景 */
+    border-radius: 5px;
+    color: #000;
+    margin: 0 10px;
+    transition: background-color 0.3s;
+}
+
+.footer-links .link-box:hover {
+    background-color: rgba(255, 255, 255, 0.7); /* 鼠标悬停时稍微加深颜色 */
+}
+
+footer {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 50px; 
+}
+
+.footer-links {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #000;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ccc;
+}
